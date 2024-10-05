@@ -1,0 +1,14 @@
+# config.yaml
+# Global configurations
+game_dir: "/home/steam/Steam/steamapps/common/Don't Starve Together Dedicated Server"  # Path to the game directory
+save_dir: "/home/steam/.klei/DoNotStarveTogether"  # Path to the save directory
+migrate_dir: "/home/steam/ftp/dst_pack"  # Path to the directory to migrate saves from
+log_dir: "/home/steam/log/dst"  # Path to the log directory
+steam_account: "anonymous"  # Your Steam account name
+
+# Admin and token configurations
+cluster_token: "your_cluster_token"  # Your cluster token (like "pds-xxxxx")
+adminlist:  # List of Klei ids of the admins (like "KU_xxxxx")
+    - "admin_1"
+    - "admin_2"
+    - "admin_3"
