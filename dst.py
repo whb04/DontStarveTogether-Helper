@@ -65,8 +65,7 @@ def check_save_structure(save_path):
     return True
 
 # Generate missing files in the save folder
-def generate_missing_files(save_name):
-    save_path = os.path.join(save_dir, save_name)
+def generate_missing_files(save_path):
     cluster_token_path = os.path.join(save_path, "cluster_token.txt")
     adminlist_path = os.path.join(save_path, "adminlist.txt")
 
@@ -96,8 +95,7 @@ def migrate_save(save_name):
 
     # Check if the source save directory exists and has the correct structure
     if os.path.exists(save_src):
-        
-        generate_missing_files(save_name)
+        generate_missing_files(save_src)
 
         if not check_save_structure(save_src):
             print(f"Error: Save structure invalid in {save_src}. Migration aborted.")
